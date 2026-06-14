@@ -2,7 +2,7 @@ const DATA = {
   services: {
     "Intersection Counts": {
       content:
-        "TrafficPulse Analytics provides intersection count reports that capture directional traffic volume at signalized and non-signalized junctions. Also known as Turning Movement Counts (TMC), this study includes left-turn, right-turn, U-turn, and through movements for each approach.",
+        "Traf-O-Data Analytical Solutions provides intersection count reports that capture directional traffic volume at signalized and non-signalized junctions. Also known as Turning Movement Counts (TMC), this study includes left-turn, right-turn, U-turn, and through movements for each approach.",
       image: "intersectionCounts.png",
     },
 
@@ -14,7 +14,7 @@ const DATA = {
 
     "Road volume Counts": {
       content:
-        "TrafficPulse Analytics processes road section videos and converts them into accurate volume and classified traffic data. Whether it’s a single lane road or a multi-lane highway, captured by a single camera, multiple cameras, or drone footage — we extract clean results based on your required classification format and reporting style.",
+        "Traf-O-Data Analytical Solutions processes road section videos and converts them into accurate volume and classified traffic data. Whether it’s a single lane road or a multi-lane highway, captured by a single camera, multiple cameras, or drone footage — we extract clean results based on your required classification format and reporting style.",
       image: "roundVolumeCounts.png",
     },
 
@@ -38,7 +38,7 @@ const DATA = {
 
     "Parking Studies": {
       content:
-        "TrafficPulse Analytics extracts parking data from video to generate reports such as accumulation, occupancy, turnover, and duration-of-stay. Results can be customized based on project needs and client reporting formats.",
+        "Traf-O-Data Analytical Solutions extracts parking data from video to generate reports such as accumulation, occupancy, turnover, and duration-of-stay. Results can be customized based on project needs and client reporting formats.",
       image: "parkingStudies.png",
     },
 

@@ -1,4 +1,4 @@
-# TrafficPulse Analytics Landing Page
+# Traf-O-Data Analytical Solutions Landing Page
 
 A responsive business-style landing page template built as part of my frontend practice.
 
