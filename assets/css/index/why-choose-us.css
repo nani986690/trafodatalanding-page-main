@@ -1,0 +1,45 @@
+#why-choose-us {
+  background: var(--section-bg);
+  padding-block: 3rem;
+
+  .container {
+    max-width: 1100px;
+  }
+
+}
+
+#why-choose-us .card {
+
+    border: none;
+
+    transition: all 150ms linear;
+
+    .card-number {
+        color: var(--color-text-dark);
+
+        display: inline-block;
+        width: max-content;
+        font-size: 5rem;
+        font-weight: 900;
+        padding: 8px;
+    }
+
+    .card-title {
+        font-size: 2.5rem;
+        font-weight: 800;
+    }
+
+    &:hover {
+        color: var(--color-text-white);
+        transform: translateY(-8px);
+        background-color: #f4b400;
+
+        .card-number {
+            color: var(--color-text-medium);
+        }
+
+        .card-content {
+            color: var(--color-text-light) !important;
+        }
+    }
+}

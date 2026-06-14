@@ -1,0 +1,60 @@
+#about-us {
+  padding: 4rem 0;
+
+  .about-us-content,
+  .image-wrapper,
+  .title,
+  .subtitle {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+
+  .animate-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .about-us-page-btn {
+    margin-top: 2rem;
+    a {
+      display: inline-block;
+      border: none;
+      padding: 0.85rem 1.5rem;
+      background-color: var(--color-accent);
+      color: var(--color-primary);
+      font-weight: 700;
+      border-radius: 12px;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: var(--color-accent-hover);
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      }
+
+      &:active {
+        background-color: var(--color-accent-active);
+      }
+
+      &:focus-visible {
+        outline: 2px solid var(--color-primary);
+        outline-offset: 2px;
+      }
+    }
+  }
+
+  .image-wrapper {
+    overflow: hidden;
+    img {
+      transition: transform 0.6s ease;
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 3rem 1rem;
+  }
+}

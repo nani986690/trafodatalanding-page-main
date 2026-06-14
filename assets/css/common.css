@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+
+}
+
+:root {
+  /* Brand Colors */
+  --color-primary: #0B3F8A;
+  --color-primary-hover: #0B3F8A;
+  --color-accent: #F4B400;
+  --color-accent-hover: #FFD54F;
+  --color-accent-active: #E0A800;
+
+  /* Text Colors */
+  --color-text-dark: #1E293B;
+  --color-text-medium: #64748B;
+  --color-text-white: #ffffff;
+
+  /* Backgrounds */
+  --color-bg-light: #F8FAFC;
+  --color-bg-white: #FFFFFF;
+
+  --section-bg: linear-gradient(
+      0deg,
+      color-mix(in srgb, var(--color-bg-light) 88%, #ffffff) 0%,
+      var(--color-bg-light) 100%
+    );
+}
+
+button,
+.btn,
+.btn-primary,
+.primary-btn,
+.cta-button,
+.read-more,
+.hero-button,
+.action-button,
+.btn-sm,
+input[type="submit"],
+input[type="button"],
+input[type="reset"] {
+  background: var(--color-accent);
+  color: var(--color-primary);
+  border: none;
+  border-radius: 12px;
+  padding: 0.85rem 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button:hover,
+.btn:hover,
+.btn-primary:hover,
+.primary-btn:hover,
+.cta-button:hover,
+.read-more:hover,
+.hero-button:hover,
+.action-button:hover,
+.btn-sm:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover {
+  background: var(--color-accent-hover);
+  color: var(--color-primary);
+  transform: translateY(-2px);
+}
+
+button:active,
+.btn:active,
+.btn-primary:active,
+.primary-btn:active,
+.cta-button:active,
+.read-more:active,
+.hero-button:active,
+.action-button:active,
+.btn-sm:active,
+input[type="submit"]:active,
+input[type="button"]:active,
+input[type="reset"]:active {
+  background: var(--color-accent-active);
+}
+
+button:focus-visible,
+.btn:focus-visible,
+.btn-primary:focus-visible,
+.primary-btn:focus-visible,
+.cta-button:focus-visible,
+.read-more:focus-visible,
+.hero-button:focus-visible,
+.action-button:focus-visible,
+.btn-sm:focus-visible,
+input[type="submit"]:focus-visible,
+input[type="button"]:focus-visible,
+input[type="reset"]:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+button:focus,
+.btn:focus,
+.btn-primary:focus,
+.primary-btn:focus,
+.cta-button:focus,
+.read-more:focus,
+.hero-button:focus,
+.action-button:focus,
+.btn-sm:focus,
+input[type="submit"]:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+
+.title {
+    font-size: 12px !important;
+    padding: 4px 8px;
+    font-weight: 500;
+    margin: 2rem 0 1rem 0;
+    display: inline-block;
+
+    background-color: var(--color-bg-white) !important;
+    color: var(--color-primary);
+}
+
+.subtitle {
+    font-weight: 700;
+    font-size: 2rem;
+    margin: 0 0 1rem 0;
+}

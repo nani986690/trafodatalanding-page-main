@@ -1,0 +1,84 @@
+header {
+  .hero {
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+      url(../../images/about-us/header-bg.webp) no-repeat center
+        center;
+    background-size: cover;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    .container {
+      max-width: 600px;
+
+      .content-overlay {
+        font-size: 4rem;
+        width: max-content;
+        font-weight: 700;
+        color: var(--color-primary);
+        text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+        font-size: 4rem;
+        white-space: nowrap; /* prevents breaking into multiple lines */
+        overflow: hidden;
+      }
+    }
+  }
+
+  .breadcrumb-wrapper {
+    background: rgba(245, 246, 250, 0.95);
+    padding: 0.75rem 1rem;
+    margin-top: 0;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+
+    ol.breadcrumb {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      background: transparent;
+
+      .breadcrumb-item {
+        font-size: 0.9rem;
+        color: var(--color-text-medium);
+        text-transform: capitalize;
+
+        & + .breadcrumb-item::before {
+          content: "/";
+          padding: 0 0.5rem;
+          color: var(--color-text-medium);
+        }
+
+        a {
+          text-decoration: none;
+          color: var(--color-primary);
+          transition: color 0.3s ease;
+
+          &:hover {
+            color: var(--color-primary-hover);
+          }
+        }
+
+        &.active {
+          font-weight: 600;
+          color: var(--color-text-dark);
+          pointer-events: none;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .hero {
+      height: 200px;
+
+      .container .content-overlay {
+        font-size: 2rem;
+      }
+    }
+  }
+}

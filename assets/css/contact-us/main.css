@@ -1,0 +1,177 @@
+@import url(../common.css);
+@import url(../about-us/header.css);
+@import url(../contact-us/contact.css);
+/* ================= Contact Hero Layout ================= */
+.hero-layout {
+  position: relative;
+  width: 100%;
+  height: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  /* Background image */
+  background: url(../../images/about-us/main-bg.webp) no-repeat center center
+    fixed;
+  background-size: cover;
+}
+
+.hero-layout::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.35); /* dark overlay */
+  z-index: 1;
+}
+
+/* Centered content wrapper */
+.text-content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 3rem;
+  text-align: center;
+}
+
+/* Titles */
+.text-content .title {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: var(--color-primary);
+}
+
+/* Contact Section Cards */
+.contact-section .glass-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  padding: 2rem 1rem;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+.contact-section .glass-card i {
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
+  transition:
+    transform 0.5s ease,
+    color 0.5s ease;
+}
+
+.contact-section .glass-card h5 {
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  color: var(--color-text-white);
+}
+
+.contact-section .glass-card a,
+.contact-section .glass-card p {
+  color: var(--color-text-white);
+  text-decoration: none;
+}
+
+.contact-section .glass-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+}
+
+.contact-section .glass-card:hover i {
+  transform: translateY(-5px) rotate(-10deg);
+  color: var(--color-primary-hover);
+}
+
+/* Contact Form */
+.contact-form form {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8px);
+}
+
+.contact-form .btn-primary {
+  background-color: var(--color-accent);
+  border-color: transparent;
+  color: var(--color-primary);
+  transition: all 0.3s ease;
+}
+
+.contact-form .btn-primary:hover {
+  background-color: var(--color-accent-hover);
+  border-color: transparent;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.contact-form .btn-primary:active {
+  background-color: var(--color-accent-active);
+}
+
+.contact-form .btn-primary:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: var(--color-text-white);
+  transition: all 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: var(--color-primary);
+  background-color: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+
+.contact-form .invalid-feedback {
+  color: #ff6b6b;
+}
+
+/* Background overlay for collage */
+.background-collage .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+}
+
+/* Scroll animations */
+.animate-item {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.7s ease;
+}
+
+.animate-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .text-content {
+    padding: 1.5rem 2rem;
+  }
+
+  .contact-section .glass-card {
+    padding: 1.5rem 1rem;
+  }
+}
