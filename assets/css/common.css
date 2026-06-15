@@ -17,11 +17,17 @@
   /* Text Colors */
   --color-text-dark: #1E293B;
   --color-text-medium: #64748B;
+  --color-text-light: #94A3B8;
   --color-text-white: #ffffff;
 
   /* Backgrounds */
   --color-bg-light: #F8FAFC;
   --color-bg-white: #FFFFFF;
+  --color-bg-section: #F8FAFC;
+
+  /* Primary variations */
+  --primary-light: #6C63FF;
+  --primary-dark: #0B3F8A;
 
   --section-bg: linear-gradient(
       0deg,
