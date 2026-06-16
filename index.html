@@ -52,6 +52,10 @@
               </li>
 
               <li class="nav-item">
+                <a class="nav-link" href="#testimonials">Testimonials</a>
+              </li>
+
+              <li class="nav-item">
                 <a href="#contact-section" class="nav-link"> Contact Us </a>
               </li>
             </ul>
@@ -118,7 +122,7 @@
         <div class="container">
           <div class="hero-content-overlay">
             <h1 class="title">Welcome to Traf-O-Data Analytical Solutions</h1>
-            <h2>South Asia’s Largest Transportation Data Analytics Company</h2>
+            <h2 style="color: #f4b400;">South Asia’s Largest Transportation Data Analytics Company</h2>
            
             <div class="cta-btns">
               <a class="btn" href="#services">View Our Services</a>
@@ -263,6 +267,228 @@
           <div class="accordion" id="servicesAccordion"></div>
         </div>
       </section>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+<style>
+.stats-section{
+    padding:60px 20px;
+    max-width:1400px;
+    margin:auto;
+}
+
+.stats-heading{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.stats-heading h2{
+    font-size:2.5rem;
+    font-weight:800;
+    color:#0B3F8A;
+    margin-bottom:10px;
+}
+
+.stats-heading p{
+    font-size:1rem;
+    color:#64748B;
+    max-width:700px;
+    margin:auto;
+}
+
+.stats-wrapper{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:25px;
+}
+
+.stat-card{
+    background:#FFC107;
+    border-radius:12px;
+    text-align:center;
+    padding:30px 20px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.12);
+    transition:all .3s ease;
+}
+
+.stat-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+}
+
+.stat-icon{
+    font-size:2.8rem;
+    color:#0B3F8A;
+    margin-bottom:15px;
+}
+
+.stat-number{
+    font-size:2.2rem;
+    font-weight:800;
+    color:#1E293B;
+    margin-bottom:8px;
+}
+
+.stat-label{
+    font-weight:700;
+    text-transform:uppercase;
+    font-size:0.85rem;
+    letter-spacing:1px;
+    color:#374151;
+}
+
+/* Tablet */
+@media (min-width:768px){
+    .stats-wrapper{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+/* Desktop */
+@media (min-width:992px){
+    .stats-wrapper{
+        grid-template-columns:repeat(4,1fr);
+    }
+}
+</style>
+
+<div class="stats-section">
+
+    <div class="stats-heading">
+        <h2>Our Achievements</h2>
+        <p>
+            Delivering exceptional traffic management solutions with experienced analysts and trusted global clients.
+        </p>
+    </div>
+
+    <div class="stats-wrapper">
+
+        <div class="stat-card">
+            <div class="stat-icon">
+                <i class="bi bi-image"></i>
+            </div>
+            <div class="stat-number">20,000+</div>
+            <div class="stat-label">Delivered Hours</div>
+        </div>
+
+        <div class="stat-card">
+            <div class="stat-icon">
+                <i class="bi bi-heart-fill"></i>
+            </div>
+            <div class="stat-number">1</div>
+            <div class="stat-label">Headquarters</div>
+        </div>
+
+        <div class="stat-card">
+            <div class="stat-icon">
+                <i class="bi bi-people-fill"></i>
+            </div>
+            <div class="stat-number">60+</div>
+            <div class="stat-label">Traffic Analysts</div>
+        </div>
+
+        <div class="stat-card">
+            <div class="stat-icon">
+                <i class="bi bi-trophy-fill"></i>
+            </div>
+            <div class="stat-number">3+</div>
+            <div class="stat-label">Global Clients</div>
+        </div>
+
+    </div>
+
+</div>
+      <!-- === Testimonials Section === -->
+      <section class="testimonials-section" id="testimonials">
+        <div class="container">
+          <!-- Header -->
+          <div class="section-header">
+            <span class="title"></span>
+            <h2>Testmonials</h2>
+            <span class="subtitle">Trusted by Professionals Worldwide</span>
+          </div>
+
+          <!-- Carousel -->
+          <div class="testimonials-carousel-wrapper">
+            <div class="testimonials-carousel" id="testimonials-carousel">
+              <!-- Card 1 -->
+              <article class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-content">"Prakash and his team consistently delivered accurate traffic survey data within the agreed timescales. The quality of the results exceeded our expectations."</p>
+                <div class="d-flex align-items-center">
+                  <div class="client-avatar">T</div>
+                  <div>
+                    <span class="client-name">Traffic Consultancy</span>
+                    <span class="client-company">United Kingdom</span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Card 2 -->
+              <article class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-content">"We were impressed by the team's attention to detail and ability to handle complex traffic count requirements. Reliable and professional delivery."</p>
+                <div class="d-flex align-items-center">
+                  <div class="client-avatar">P</div>
+                  <div>
+                    <span class="client-name">Planning Firm</span>
+                    <span class="client-company">USA</span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Card 3 -->
+              <article class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-content">"The manual traffic counts were completed to a very high standard. The team was responsive, flexible, and extremely easy to work with."</p>
+                <div class="d-flex align-items-center">
+                  <div class="client-avatar">R</div>
+                  <div>
+                    <span class="client-name">Safety Consultant</span>
+                    <span class="client-company">Australia</span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Duplicates for seamless loop -->
+              <article class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-content">"Prakash and his team consistently delivered accurate traffic survey data within the agreed timescales. The quality of the results exceeded our expectations."</p>
+                <div class="d-flex align-items-center">
+                  <div class="client-avatar">T</div>
+                  <div>
+                    <span class="client-name">Traffic Consultancy</span>
+                    <span class="client-company">United Kingdom</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-content">"We were impressed by the team's attention to detail and ability to handle complex traffic count requirements. Reliable and professional delivery."</p>
+                <div class="d-flex align-items-center">
+                  <div class="client-avatar">P</div>
+                  <div>
+                    <span class="client-name">Planning Firm</span>
+                    <span class="client-company">USA</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-content">"The manual traffic counts were completed to a very high standard. The team was responsive, flexible, and extremely easy to work with."</p>
+                <div class="d-flex align-items-center">
+                  <div class="client-avatar">R</div>
+                  <div>
+                    <span class="client-name">Safety Consultant</span>
+                    <span class="client-company">Australia</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!-- === Contact Us Section === -->
       <section
@@ -318,6 +544,9 @@
                 <a href="#services">Our Services</a>
               </li>
               <li>
+                <a href="#testimonials">Testimonials</a>
+              </li>
+              <li>
                 <a href="#contact-section">Contact Us</a>
               </li>
             </ul>
@@ -353,16 +582,15 @@
             <h3 class="title">Contact Us</h3>
             <ul class="list-unstyled">
               <li class="address">
-                Plot No. 45, 3rd Floor, Skyline Towers, Madhapur,
-                        Hyderabad, Telangana – 500081
+               301, Anvitha Adobe, 7th Cross Alfa Garden, Ayyappa Nagar, Kodigehalli Road, Bengaluru, Karnataka, India
               </li>
               <li class="phone">
-                <a href="tel:+919502857043"></a>
+                <a href="tel:+91 95028 57043">+91 95028 57043</a>
               </li>
               <li
                 class="mail"
               >
-                mailto: <a href="mailto:2dGt9@example.com">2dGt9@gmail.com</a>
+                mailto: <a href="mailto:prakash@traf-o-dataanalyticalsolutions.com">prakash@traf-o-dataanalyticalsolutions.com</a>
               </li>
             </ul>
             <!-- <div class="map-frame">

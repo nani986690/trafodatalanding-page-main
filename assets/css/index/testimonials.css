@@ -1,0 +1,61 @@
+:root {
+            --color-primary: #0B3F8A;
+            --color-accent: #FFC72C;
+            --color-text-dark: #1E293B;
+            --color-bg-light: #F8FAFC;
+        }
+
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; background-color: var(--color-bg-light); }
+
+        .section-header { text-align: center; margin-bottom: 60px; }
+        .section-header .subtitle { color: var(--color-primary); font-weight: 600; text-transform: uppercase; letter-spacing: 2px; font-size: 0.8rem; }
+        .section-header h2 { color: var(--color-primary); font-weight: 800; font-size: 2.5rem; margin-top: 10px; }
+
+        .testimonials-section { padding: 80px 0; overflow: hidden; }
+        
+        .testimonials-carousel {
+            display: flex;
+            gap: 20px;
+            animation: scroll-left 25s linear infinite;
+        }
+
+        .testimonials-carousel:hover { animation-play-state: paused; }
+
+        @keyframes scroll-left {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(calc(-50% - 10px)); }
+        }
+
+        /* Card Design Updated */
+        .testimonial-card {
+            min-width: 300px;
+            max-width: 300px;
+            padding: 25px;
+            background: #fff;
+            border-radius: 20px;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+        }
+
+        .testimonial-card:hover { transform: translateY(-10px); border-color: var(--color-accent); }
+        
+        .stars { color: var(--color-accent); margin-bottom: 15px; font-size: 0.9rem; }
+        .testimonial-content { font-size: 0.95rem; line-height: 1.5; color: #475569; margin-bottom: 20px; }
+        
+        .client-avatar {
+            width: 40px; height: 40px;
+            background: var(--color-primary);
+            color: #fff;
+            border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-weight: 700; margin-right: 12px;
+        }
+        
+        .client-name { font-weight: 700; color: var(--color-primary); display: block; font-size: 0.9rem; }
+        .client-company { font-size: 0.8rem; color: #94A3B8; }
+
+        @media (max-width: 768px) {
+            .testimonial-card { min-width: 260px; max-width: 260px; }
+        }
+      

@@ -58,6 +58,20 @@
   transform: scale(1.05);
 }
 
+#why-choose-us .title,
+#about-us .title,
+#services .title {
+  font-size: clamp(2.2rem, 3vw, 3rem) !important;
+  font-weight: 800 !important;
+  color: var(--color-primary) !important;
+  background-color: transparent !important;
+  padding: 0 !important;
+  margin: 0 0 1rem 0;
+  display: inline-block;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
 @media (max-width: 768px) {
   #about-us {
     padding: 3rem 1rem;
