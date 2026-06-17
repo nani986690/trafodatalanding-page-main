@@ -9,7 +9,7 @@ const DATA = {
     "Roundabout Counts": {
       content:
         "Our roundabout count reports measure entry, circulating, and exit volumes for each leg of the roundabout. This data helps evaluate capacity, safety, and overall performance of every approach and the roundabout as a whole.",
-      image: "assets/images/index/our-services/roundaboutCounts.jpg",
+      image: "roundaboutCounts.jpg",
     },
 
     "Road volume Counts": {
