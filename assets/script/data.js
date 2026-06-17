@@ -3,7 +3,7 @@ const DATA = {
     "Intersection Counts": {
       content:
         "Traf-O-Data Analytical Solutions provides intersection count reports that capture directional traffic volume at signalized and non-signalized junctions. Also known as Turning Movement Counts (TMC), this study includes left-turn, right-turn, U-turn, and through movements for each approach.",
-      image: "intersectionCounts.png",
+      image: "intersectionCounts.jpg",
     },
 
     "Roundabout Counts": {
